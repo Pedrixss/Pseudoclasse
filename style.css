@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffa500; /* Cor ao passar o mouse */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #ffa500; /* Cor ao focar no campo */
+}
+
+input[type="checkbox"]:checked + label {
+    color: #ffa500; /* Cor ao marcar a caixa */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc; /* Cor do botão desativado */
+}
+
+button:active {
+    transform: scale(0.95); /* Diminui o botão ao clicar */
+}
+
+ul {
+    padding: 0;
+}
+
+li:nth-child(odd) img {
+    background-color: #f0f0f0; /* Fundo diferente para imagens ímpares */
+}
+
+p:first-child {
+    font-weight: bold; /* Estilo para o primeiro parágrafo */
+}
+
+p:last-child {
+    color: #ff0000; /* Estilo para o último parágrafo */
+}
+
+p:not(.important) {
+    color: #777; /* Estilo para o parágrafo que não é importante */
+}

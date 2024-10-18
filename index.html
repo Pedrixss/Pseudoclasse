@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minha Página</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contato">
+            <h2>Formulário de Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label>
+                    <input type="checkbox" id="newsletter"> Assinar newsletter
+                </label>
+                
+                <button type="submit" disabled>Enviar</button>
+            </form>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <ul>
+                <li><img src="image1.jpg" alt="Imagem 1"></li>
+                <li><img src="image2.jpg" alt="Imagem 2"></li>
+                <li><img src="image3.jpg" alt="Imagem 3"></li>
+                <li><img src="image4.jpg" alt="Imagem 4"></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conteúdo Principal</h2>
+            <p>Este é o primeiro parágrafo que descreve o site.</p>
+            <p>Este é o segundo parágrafo com mais detalhes.</p>
+            <p>Este é o último parágrafo que conclui a descrição.</p>
+        </section>
+
+        <button class="saiba-mais">Saiba mais</button>
+
+        <section>
+            <p class="important">Este parágrafo é importante.</p>
+            <p>Este parágrafo não é importante e deve ser estilizado.</p>
+        </section>
+    </main>
+</body>
+</html>
