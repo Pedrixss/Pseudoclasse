@@ -1,48 +1,40 @@
-/* Muda a cor dos links ao passar o mouse */
+
 a:hover {
-    color: #ff6347; /* Tomate */
+    color: #ff6347;
 }
 
-/* Muda a cor da borda dos campos de entrada ao serem focados */
 input:focus {
-    border-color: #4caf50; /* Verde */
+    border-color: #4caf50; 
 }
 
-/* Muda a cor do texto da caixa de seleção ao ser marcada */
 input[type="checkbox"]:checked {
-    color: #ff6347; /* Tomate */
+    color: #ff6347; 
 }
 
-/* Estilo para o botão desativado */
 button:disabled {
     background-color: #ccc; /* Cinza */
     color: #666; /* Cinza escuro */
     cursor: not-allowed;
 }
 
-/* Fundo diferente para imagens em posições ímpares */
 img:nth-child(odd) {
     background-color: #f0f0f0; /* Cinza claro */
 }
 
-/* Estilo diferenciado para o primeiro parágrafo */
 p:first-child {
     font-weight: bold;
     color: #000080; /* Azul marinho */
 }
 
-/* Estilo para o último parágrafo */
 p:last-child {
     font-style: italic;
     color: #808080; /* Cinza */
 }
 
-/* Diminuir o tamanho do botão ao ser clicado */
 button:active {
     transform: scale(0.95); /* Reduz o tamanho */
 }
 
-/* Estilo para parágrafos que não têm a classe .important */
 p:not(.important) {
     color: #555; /* Cinza escuro */
 }
