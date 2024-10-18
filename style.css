@@ -1,84 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Muda a cor dos links ao passar o mouse */
+a:hover {
+    color: #ff6347; /* Tomate */
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+/* Muda a cor da borda dos campos de entrada ao serem focados */
+input:focus {
+    border-color: #4caf50; /* Verde */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Muda a cor do texto da caixa de seleção ao ser marcada */
+input[type="checkbox"]:checked {
+    color: #ff6347; /* Tomate */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #ffa500; /* Cor ao passar o mouse */
-}
-
-form {
-    margin: 20px 0;
-}
-
-input[type="text"], input[type="email"] {
-    padding: 10px;
-    border: 2px solid #ccc;
-    width: 100%;
-}
-
-input[type="text"]:focus, input[type="email"]:focus {
-    border-color: #ffa500; /* Cor ao focar no campo */
-}
-
-input[type="checkbox"]:checked + label {
-    color: #ffa500; /* Cor ao marcar a caixa */
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
+/* Estilo para o botão desativado */
 button:disabled {
-    background-color: #ccc; /* Cor do botão desativado */
+    background-color: #ccc; /* Cinza */
+    color: #666; /* Cinza escuro */
+    cursor: not-allowed;
 }
 
-button:active {
-    transform: scale(0.95); /* Diminui o botão ao clicar */
+/* Fundo diferente para imagens em posições ímpares */
+img:nth-child(odd) {
+    background-color: #f0f0f0; /* Cinza claro */
 }
 
-ul {
-    padding: 0;
-}
-
-li:nth-child(odd) img {
-    background-color: #f0f0f0; /* Fundo diferente para imagens ímpares */
-}
-
+/* Estilo diferenciado para o primeiro parágrafo */
 p:first-child {
-    font-weight: bold; /* Estilo para o primeiro parágrafo */
+    font-weight: bold;
+    color: #000080; /* Azul marinho */
 }
 
+/* Estilo para o último parágrafo */
 p:last-child {
-    color: #ff0000; /* Estilo para o último parágrafo */
+    font-style: italic;
+    color: #808080; /* Cinza */
 }
 
+/* Diminuir o tamanho do botão ao ser clicado */
+button:active {
+    transform: scale(0.95); /* Reduz o tamanho */
+}
+
+/* Estilo para parágrafos que não têm a classe .important */
 p:not(.important) {
-    color: #777; /* Estilo para o parágrafo que não é importante */
+    color: #555; /* Cinza escuro */
 }
